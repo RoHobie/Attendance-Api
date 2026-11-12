@@ -1,0 +1,10 @@
+*.db
+*.db-wal
+*.db-shm
+.env
+/api
+.env
+backups/
+deploy/caddy-root.crt
+.deployed_version
+.previous_version
