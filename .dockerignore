@@ -1,0 +1,15 @@
+.git
+*.db
+*.db-wal
+*.db-shm
+.env
+tests
+README.md
+Dockerfile
+compose.yaml
+backups
+deploy/caddy-root.crt
+.github
+docs
+scripts
+.deployed_version
