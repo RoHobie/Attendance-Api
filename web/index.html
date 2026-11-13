@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Attendance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="login" class="card narrow">
+    <h1>School Attendance</h1>
+    <p class="muted">Enter your access code to continue.</p>
+    <form id="login-form">
+      <input id="code" type="password" placeholder="Access code" autocomplete="off" required>
+      <button type="submit">Sign in</button>
+    </form>
+    <p id="login-error" class="error" hidden></p>
+  </section>
+
+  <main id="app" hidden>
+    <header>
+      <h1>School Attendance</h1>
+      <div><span id="who"></span> <button id="logout" class="link">Sign out</button></div>
+    </header>
+
+    <section class="card controls">
+      <label>Class <select id="class"></select></label>
+      <label>Date <input id="date" type="date"></label>
+      <label>Session
+        <select id="session">
+          <option value="MORNING">Morning</option>
+          <option value="AFTERNOON">Afternoon</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="card">
+      <div class="summary">
+        <span id="summary" class="muted"></span>
+        <span id="actions">
+          <button id="all-present" class="secondary">Mark all present</button>
+          <button id="save">Save attendance</button>
+        </span>
+      </div>
+      <p id="message" hidden></p>
+      <table>
+        <thead><tr><th>#</th><th>Student</th><th>Present</th><th>Absent</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
