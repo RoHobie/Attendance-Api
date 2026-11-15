@@ -60,7 +60,7 @@ jobs:
           build-args: VERSION=${{ github.ref_name }}
           tags: scan-target:ci
       - name: Scan image (Trivy, HIGH/CRITICAL)
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: scan-target:ci
           severity: HIGH,CRITICAL
