@@ -1,0 +1,22 @@
+### Deploy v1.1.0 (Go 1.26 build) with automatic pre-deploy backup
+==> Backing up before deploy
+Backup written: backups/school-20261114T053650Z.db
+5436e73323db21d49c94a08d420dddacb02b138dbd4d4310d61f818989a120fc  school-20261114T053650Z.db
+==> Deploying v1.1.0 (previous: v1.0.0)
+ Image school-api:v1.1.0 Building 
+ Image school-api:v1.1.0 Built 
+==> v1.1.0 is healthy
+ school-management-app-proxy-1 Copying school-management-app-proxy-1:/data/caddy/pki/authorities/local/root.crt to deploy/caddy-root.crt
+ school-management-app-proxy-1 Copied school-management-app-proxy-1:/data/caddy/pki/authorities/local/root.crt to deploy/caddy-root.crt
+{"status":"ok","version":"v1.1.0"}
+
+### Rollback to previous version
+==> Rolling back v1.1.0 -> v1.0.0
+{"status":"ok","version":"v1.0.0"}
+
+==> Rollback complete
+
+### Images available locally
+school-api:v1.1.0  913262ce4d7d  22.3MB
+school-api:dev  1ee40abf6859  21.3MB
+school-api:v1.0.0  42fc09332b00  21.3MB

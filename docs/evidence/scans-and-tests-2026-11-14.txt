@@ -1,0 +1,16 @@
+### govulncheck (Go 1.26.11)
+go: downloading go1.26.11 (linux/amd64)
+No vulnerabilities found.
+
+### Trivy image scan school-api:v1.1.0 (HIGH,CRITICAL, unfixed ignored)
+school-api:v1.1.0 (debian 12.15)
+Total: 0 (HIGH: 0, CRITICAL: 0)
+
+### Tests (race detector)
+--- PASS: TestHealth (1.39s)
+--- PASS: TestAuthAndClasses (1.41s)
+--- PASS: TestStudentsAuthorization (1.44s)
+--- PASS: TestCreateAttendance (1.45s)
+--- PASS: TestConcurrentDuplicates (1.47s)
+--- PASS: TestUpdateAttendanceIsAudited (1.43s)
+ok  	school-management/tests	9.610s
